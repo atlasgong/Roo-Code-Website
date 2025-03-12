@@ -7,8 +7,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "RooCode | Your AI-Powered Dev Team",
-    description: " Roo Code (prev. Roo Cline) gives you a whole dev team of AI agents in your code editor. ",
+    title: "Roo Code – Your AI-Powered Dev Team in VS Code",
+    description: "Roo Code puts an entire AI dev team right in your editor, outpacing closed tools with deep project-wide context, multi-step agentic coding, and unmatched developer-centric flexibility.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
