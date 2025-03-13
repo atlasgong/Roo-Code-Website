@@ -123,7 +123,7 @@ export function Testimonials() {
                         {testimonials.map((testimonial, index) => (
                             <motion.div key={testimonial.id} variants={itemVariants} className={`group relative ${index % 2 === 0 ? "md:translate-y-4" : "md:translate-y-12"}`}>
                                 <div className="absolute -inset-px rounded-2xl bg-gradient-to-r from-blue-500/30 via-cyan-500/30 to-purple-500/30 opacity-0 blur-sm transition-all duration-500 ease-out group-hover:opacity-100" />
-                                <div className="relative rounded-2xl border border-border/50 bg-background/30 backdrop-blur-xl transition-all duration-500 ease-out group-hover:border-border group-hover:bg-background/40">
+                                <div className="relative h-full rounded-2xl border border-border/50 bg-background/30 backdrop-blur-xl transition-all duration-500 ease-out group-hover:border-border group-hover:bg-background/40">
                                     {testimonial.image && (
                                         <div className="absolute -right-3 -top-3 h-16 w-16 overflow-hidden rounded-xl border border-border/50 bg-background/50 p-1.5 backdrop-blur-xl transition-all duration-500 ease-out group-hover:scale-105">
                                             <div className="relative h-full w-full overflow-hidden rounded-lg">
