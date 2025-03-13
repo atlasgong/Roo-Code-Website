@@ -26,10 +26,11 @@ export function CodeExample() {
         } else if (textIndex >= codeExamples[currentMode].code.length) {
             setIsTyping(false);
             // switch to next mode after a delay
-            setTimeout(() => {
+            const timer = setTimeout(() => {
                 const nextMode = currentMode === "code" ? "architect" : currentMode === "architect" ? "debug" : "code";
                 switchMode(nextMode);
             }, 1000); // wait a second before switching
+            return () => clearTimeout(timer);
         }
     }, [isTyping, textIndex, currentMode]);
 
