@@ -33,11 +33,11 @@ export const testimonials: Testimonial[] = [
     },
     {
         id: 3,
-        name: "u/nick-baumann",
-        role: "Redditor",
-        company: "Reddit",
+        name: "Can Nuri",
+        role: "Reviewer",
+        company: "VS Code Marketplace",
         image: "/placeholder_pfp.png?height=80&width=80",
-        quote: "Compared to Windsurf and Cursor, Cline gives you more control over which models you use at different stages… Roo provides more powerful outputs by reading files in your codebase and asking clarifying questions.",
+        quote: "Roo Code is one of the most inspiring projects I have seen for a long time. It shapes the way I think and deal with software development.",
     },
     {
         id: 4,
