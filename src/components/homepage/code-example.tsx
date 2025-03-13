@@ -25,6 +25,11 @@ export function CodeExample() {
             return () => clearTimeout(timer);
         } else if (textIndex >= codeExamples[currentMode].code.length) {
             setIsTyping(false);
+            // switch to next mode after a delay
+            setTimeout(() => {
+                const nextMode = currentMode === "code" ? "architect" : currentMode === "architect" ? "debug" : "code";
+                switchMode(nextMode);
+            }, 1000); // wait a second before switching
         }
     }, [isTyping, textIndex, currentMode]);
 
@@ -68,7 +73,7 @@ export function CodeExample() {
                     </div>
                 </div>
                 <div className="p-2 sm:p-4">
-                    <pre ref={codeContainerRef} className="scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent h-[25vh] overflow-y-auto text-xs text-muted-foreground sm:text-sm md:max-h-[50vh]">
+                    <pre ref={codeContainerRef} className="scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent overflow-y-auto text-xs text-muted-foreground max-md:h-[25vh] sm:text-sm md:max-h-[50vh]">
                         <code className="block whitespace-pre font-mono">
                             {currentText}
                             {isTyping && <motion.span animate={{ opacity: [1, 0] }} transition={{ repeat: Number.POSITIVE_INFINITY, duration: 0.8 }} className="inline-block h-4 w-2 bg-blue-500" />}
