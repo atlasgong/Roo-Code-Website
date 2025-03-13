@@ -23,7 +23,7 @@ export function Footer() {
                                 <RxDiscordLogo className="h-6 w-6" />
                                 <span className="sr-only">Discord</span>
                             </a>
-                            <a href="https://reddit.com/r/roocode" target="_blank" className="text-muted-foreground transition-colors hover:text-foreground">
+                            <a href="https://reddit.com/r/RooCode" target="_blank" className="text-muted-foreground transition-colors hover:text-foreground">
                                 <FaReddit className="h-6 w-6" />
                                 <span className="sr-only">Reddit</span>
                             </a>
@@ -129,7 +129,7 @@ export function Footer() {
                 </div>
 
                 <div className="mt-16 flex border-t border-border pt-8 sm:mt-20 lg:mt-24">
-                    <p className="mx-auto text-sm leading-5 text-muted-foreground">&copy; {new Date().getFullYear()} RooCode. All rights reserved.</p>
+                    <p className="mx-auto text-sm leading-5 text-muted-foreground">&copy; {new Date().getFullYear()} Roo Code. All rights reserved.</p>
                 </div>
             </div>
         </footer>

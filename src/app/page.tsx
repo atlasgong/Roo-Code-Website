@@ -28,7 +28,7 @@ export default async function Home() {
                         <div className="grid gap-8 md:gap-12 lg:grid-cols-2 lg:gap-16">
                             <div className="flex flex-col justify-center space-y-6 sm:space-y-8">
                                 <div className="flex">
-                                    <WhatsNewButton />
+                                    {false && <WhatsNewButton />}
                                 </div>
                                 <div>
                                     <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
@@ -42,7 +42,7 @@ export default async function Home() {
                                 </div>
                                 <div className="flex flex-col space-y-3 sm:flex-row sm:space-x-4 sm:space-y-0">
                                     <Button size="lg" className="w-full hover:bg-gray-200 dark:bg-white dark:text-black sm:w-auto">
-                                        <a href="https://docs.roocode.com/getting-started/installing" target="_blank" className="flex w-full items-center justify-center">
+                                        <a href="https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline" target="_blank" className="flex w-full items-center justify-center">
                                             Get Started
                                             <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -66,12 +66,14 @@ export default async function Home() {
                     </div>
                 </section>
 
-                <section className="border-t border-border py-20">
-                    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                        <h2 className="text-center text-2xl font-semibold uppercase tracking-wider text-muted-foreground">Trusted by innovative teams</h2>
-                        <CompanyLogos />
-                    </div>
-                </section>
+                {false && (
+                    <section className="border-t border-border py-20">
+                        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                            <h2 className="text-center text-2xl font-semibold uppercase tracking-wider text-muted-foreground">Trusted by innovative teams</h2>
+                            <CompanyLogos />
+                        </div>
+                    </section>
+                )}
 
                 <div id="features">
                     <Features />
