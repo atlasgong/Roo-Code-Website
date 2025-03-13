@@ -22,7 +22,7 @@ export function NavBar({ stars, downloads }: NavBarProps) {
                 </div>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden text-sm font-medium md:flex md:items-center md:space-x-8">
+                <nav className="hidden text-sm font-medium md:flex md:items-center md:space-x-3 lg:space-x-8">
                     <ScrollButton targetId="features" className="text-muted-foreground transition-transform duration-200 hover:scale-105 hover:text-foreground">
                         Features
                     </ScrollButton>

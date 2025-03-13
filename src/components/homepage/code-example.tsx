@@ -73,7 +73,7 @@ export function CodeExample() {
                     </div>
                 </div>
                 <div className="p-2 sm:p-4">
-                    <pre ref={codeContainerRef} className="scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent overflow-y-auto text-xs text-muted-foreground max-md:h-[25vh] sm:text-sm md:max-h-[50vh]">
+                    <pre ref={codeContainerRef} className="scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent overflow-y-auto text-xs text-muted-foreground max-lg:h-[25vh] sm:text-sm lg:max-h-[50vh]">
                         <code className="block whitespace-pre font-mono">
                             {currentText}
                             {isTyping && <motion.span animate={{ opacity: [1, 0] }} transition={{ repeat: Number.POSITIVE_INFINITY, duration: 0.8 }} className="inline-block h-4 w-2 bg-blue-500" />}
