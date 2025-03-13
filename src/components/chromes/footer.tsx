@@ -114,14 +114,14 @@ export function Footer() {
                                 <h3 className="text-sm font-semibold uppercase leading-6 text-foreground">Company</h3>
                                 <ul className="mt-6 space-y-4">
                                     <li>
-                                        <Link href="#" className="text-sm leading-6 text-muted-foreground transition-colors hover:text-foreground">
+                                        <a href="mailto:support@roocode.com" className="text-sm leading-6 text-muted-foreground transition-colors hover:text-foreground">
                                             Contact
-                                        </Link>
+                                        </a>
                                     </li>
                                     <li>
-                                        <Link href="privacy" className="text-sm leading-6 text-muted-foreground transition-colors hover:text-foreground">
+                                        <a href="https://github.com/RooVetGit/Roo-Code/blob/main/PRIVACY.md" target="_blank" className="text-sm leading-6 text-muted-foreground transition-colors hover:text-foreground">
                                             Privacy Policy
-                                        </Link>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>

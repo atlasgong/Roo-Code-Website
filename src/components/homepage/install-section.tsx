@@ -31,8 +31,10 @@ export function InstallSection({ downloads }: InstallSectionProps) {
             </motion.div>
             <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl text-center">
-                    <h2 className="text-center text-xl font-semibold uppercase tracking-wider text-muted-foreground sm:text-2xl">Install Roo Code</h2>
-                    <p className="mt-4 text-center text-base text-muted-foreground sm:mt-6 sm:text-lg">Get started with Roo Code in minutes. Install directly from VS Code or use the command line.</p>
+                    <h2 className="text-center text-xl font-semibold uppercase tracking-wider text-muted-foreground sm:text-2xl">Install Roo Code — Open & Flexible</h2>
+                    <p className="mt-4 text-center text-base text-muted-foreground sm:mt-6 sm:text-lg">
+                      Roo Code is open-source, model-agnostic, and developer-focused. Install from the VS Code Marketplace or the CLI in minutes, then bring your own AI model.
+                    </p>
                     <div className="mt-10 flex flex-col items-center justify-center gap-6">
                         <Link href="https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline" target="_blank" className="group relative inline-flex w-full items-center justify-center gap-2 rounded-xl border border-border/50 bg-background/30 px-4 py-3 text-base backdrop-blur-xl transition-all duration-300 hover:border-border hover:bg-background/40 sm:w-auto sm:gap-3 sm:px-6 sm:py-4 sm:text-lg md:text-2xl">
                             <div className="absolute -inset-px rounded-xl bg-gradient-to-r from-blue-500/30 via-cyan-500/30 to-purple-500/30 opacity-0 blur-sm transition-opacity duration-500 group-hover:opacity-100" />
