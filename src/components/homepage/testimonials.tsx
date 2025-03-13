@@ -10,7 +10,7 @@ export interface Testimonial {
     name: string;
     role: string;
     company: string;
-    image: string;
+    image?: string;
     quote: string;
 }
 
@@ -20,7 +20,7 @@ export const testimonials: Testimonial[] = [
         name: "Luca",
         role: "Reviewer",
         company: "VS Code Marketplace",
-        image: "/placeholder_pfp.png?height=80&width=80",
+        // image: "/placeholder_pfp.png?height=80&width=80",
         quote: "Roo Code is an absolute game-changer! 🚀 It makes coding faster, easier, and more intuitive with its smart AI-powered suggestions, real-time debugging, and automation features. The seamless integration with VS Code is a huge plus, and the constant updates ensure it keeps getting better",
     },
     {
@@ -28,7 +28,7 @@ export const testimonials: Testimonial[] = [
         name: "Taro Woollett-Chiba",
         role: "AI Product Lead",
         company: "Vendidit",
-        image: "/placeholder_pfp.png?height=80&width=80",
+        // image: "/placeholder_pfp.png?height=80&width=80",
         quote: "Easily the best AI code editor. Roo Code has the best features and capabilities, along with the best development team. I swear, they're the fastest to support new models and implement useful functionality whenever users mention it... simply amazing.",
     },
     {
@@ -36,7 +36,7 @@ export const testimonials: Testimonial[] = [
         name: "Can Nuri",
         role: "Reviewer",
         company: "VS Code Marketplace",
-        image: "/placeholder_pfp.png?height=80&width=80",
+        // image: "/placeholder_pfp.png?height=80&width=80",
         quote: "Roo Code is one of the most inspiring projects I have seen for a long time. It shapes the way I think and deal with software development.",
     },
     {
@@ -44,7 +44,7 @@ export const testimonials: Testimonial[] = [
         name: "Michael",
         role: "Reviewer",
         company: "VS Code Marketplace",
-        image: "/placeholder_pfp.png?height=80&width=80",
+        // image: "/placeholder_pfp.png?height=80&width=80",
         quote: "I switched from Windsurf to Roo Code in January and honestly, it's been a huge upgrade. Windsurf kept making mistakes and being dumb when I ask it for things. Roo just gets it. Projects that used to take a full day now wrap up before lunch. ",
     },
 ];
@@ -124,11 +124,13 @@ export function Testimonials() {
                             <motion.div key={testimonial.id} variants={itemVariants} className={`group relative ${index % 2 === 0 ? "md:translate-y-4" : "md:translate-y-12"}`}>
                                 <div className="absolute -inset-px rounded-2xl bg-gradient-to-r from-blue-500/30 via-cyan-500/30 to-purple-500/30 opacity-0 blur-sm transition-all duration-500 ease-out group-hover:opacity-100" />
                                 <div className="relative rounded-2xl border border-border/50 bg-background/30 backdrop-blur-xl transition-all duration-500 ease-out group-hover:border-border group-hover:bg-background/40">
-                                    <div className="absolute -right-3 -top-3 h-16 w-16 overflow-hidden rounded-xl border border-border/50 bg-background/50 p-1.5 backdrop-blur-xl transition-all duration-500 ease-out group-hover:scale-105">
-                                        <div className="relative h-full w-full overflow-hidden rounded-lg">
-                                            <Image src={testimonial.image || "/placeholder_pfp.png"} alt={testimonial.name} fill className="object-cover" />
+                                    {testimonial.image && (
+                                        <div className="absolute -right-3 -top-3 h-16 w-16 overflow-hidden rounded-xl border border-border/50 bg-background/50 p-1.5 backdrop-blur-xl transition-all duration-500 ease-out group-hover:scale-105">
+                                            <div className="relative h-full w-full overflow-hidden rounded-lg">
+                                                <Image src={testimonial.image || "/placeholder_pfp.png"} alt={testimonial.name} fill className="object-cover" />
+                                            </div>
                                         </div>
-                                    </div>
+                                    )}
 
                                     <div className="p-8">
                                         <div className="mb-6">

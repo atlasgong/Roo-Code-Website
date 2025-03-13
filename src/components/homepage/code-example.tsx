@@ -74,7 +74,7 @@ export function CodeExample() {
                     </div>
                 </div>
                 <div className="p-2 sm:p-4">
-                    <pre ref={codeContainerRef} className="scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent overflow-y-auto text-xs text-muted-foreground max-lg:h-[25vh] sm:text-sm lg:max-h-[50vh]">
+                    <pre ref={codeContainerRef} className="scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent overflow-y-hidden text-xs text-muted-foreground max-lg:h-[25vh] sm:text-sm lg:max-h-[50vh]">
                         <code className="block whitespace-pre font-mono">
                             {currentText}
                             {isTyping && <motion.span animate={{ opacity: [1, 0] }} transition={{ repeat: Number.POSITIVE_INFINITY, duration: 0.8 }} className="inline-block h-4 w-2 bg-blue-500" />}
@@ -88,10 +88,10 @@ export function CodeExample() {
 
 const codeExamples = {
     code: {
-        code: `// RooCode Code Mode
+        code: `// Code Mode
 You: Generate a React component for a user profile card
 
-RooCode: Here's a React component for a user profile card:
+Roo: Here's a React component for a user profile card:
 
 import React from 'react';
 
@@ -147,11 +147,11 @@ export const UserProfile: React.FC<UserProfileProps> = ({
 };`,
     },
     architect: {
-        code: `// RooCode Architect Mode
+        code: `// Architect Mode
 // Project: E-commerce Platform
 // Request: Design the authentication system
 
-RooCode Architect is analyzing your project...
+Roo is analyzing your project...
 
 📂 Recommended Architecture:
 
@@ -185,10 +185,10 @@ auth/
 Would you like me to generate any of these files?`,
     },
     debug: {
-        code: `// RooCode Debug Mode
+        code: `// Debug Mode
 // Analyzing error: TypeError: Cannot read property 'map' of undefined
 
-RooCode Debug has analyzed your code and found 3 issues:
+Roo has analyzed your code and found 3 issues:
 
 🐛 Issue #1: Null data reference
   Line 42: const items = data.items.map(item => item.name);

@@ -180,7 +180,7 @@ export function WhatsNewButton() {
                                     }}
                                 >
                                     <div className="flex items-center justify-between gap-4">
-                                        <h2 className="text-xl font-bold sm:text-2xl">What&apos;s New in RooCode {version}</h2>
+                                        <h2 className="text-xl font-bold sm:text-2xl">What&apos;s New in Roo Code {version}</h2>
                                         <button onClick={() => setIsOpen(false)} className="flex-shrink-0 rounded-full p-1.5 text-gray-400 hover:bg-gray-800 hover:text-white">
                                             <X className="h-5 w-5" />
                                         </button>

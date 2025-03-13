@@ -29,12 +29,12 @@ export function NavBar({ stars, downloads }: NavBarProps) {
                     <ScrollButton targetId="testimonials" className="text-muted-foreground transition-transform duration-200 hover:scale-105 hover:text-foreground">
                         Testimonials
                     </ScrollButton>
-                    <a href="https://docs.roocode.com" target="_blank" className="text-muted-foreground transition-transform duration-200 hover:scale-105 hover:text-foreground">
-                        Documentation
-                    </a>
                     <ScrollButton targetId="faq" className="text-muted-foreground transition-transform duration-200 hover:scale-105 hover:text-foreground">
                         FAQ
                     </ScrollButton>
+                    <a href="https://docs.roocode.com" target="_blank" className="text-muted-foreground transition-transform duration-200 hover:scale-105 hover:text-foreground">
+                        Documentation
+                    </a>
                 </nav>
 
                 <div className="hidden md:flex md:items-center md:space-x-3">
