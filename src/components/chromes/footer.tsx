@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Code } from "lucide-react";
 import { RxGithubLogo, RxDiscordLogo } from "react-icons/rx";
 import { FaReddit } from "react-icons/fa6";
