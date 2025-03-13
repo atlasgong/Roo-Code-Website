@@ -22,7 +22,7 @@ export default async function Home() {
         <div className="flex min-h-screen flex-col bg-background text-foreground">
             <NavBar stars={stars} downloads={downloads} />
             <main className="flex-1">
-                <section className="relative flex items-center overflow-hidden max-sm:min-h-[120vh] lg:h-[calc(100vh-theme(spacing.16))]">
+                <section className="relative flex h-[calc(125vh-theme(spacing.16))] items-center overflow-hidden md:h-[calc(100svh-theme(spacing.16))] lg:h-[calc(100vh-theme(spacing.16))]">
                     <AnimatedBackground />
                     <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="grid gap-8 md:gap-12 lg:grid-cols-2 lg:gap-16">
